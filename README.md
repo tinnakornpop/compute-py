@@ -1,5 +1,5 @@
 # compute-py
-## Docker image を作れました。（笑）
+## Docker image test use
 
 ### example
 ```
