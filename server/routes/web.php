@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'ComController@index')->name('root');
+Route::get('/test', 'ComController@test')->name('test');
+
+Route::get('/form', 'FormController@index')->name('form.index');
+Route::post('/form', 'FormController@index')->name('form.index');
+Route::get('/form/confirm1', 'FormController@confirm1')->name('form.confirm1');
+Route::post('/form/confirm1', 'FormController@confirm1')->name('form.confirm1');
